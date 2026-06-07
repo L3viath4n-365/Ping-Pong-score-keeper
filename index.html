@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Score keeper Variant</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="index.js" defer></script>
+</head>
+
+<!-- please note: the descriptions are not "proof of AI" it's there to make my code read-able -->
+<!-- it's a new practice i'm adopting!! -->
+
+<body class="flex justify-center items-center h-screen font-light text-gray-800 bg-gray-100">
+    <section>
+        <div id="container" class="flex flex-col shadow-md rounded-md md: max-w-md lg:max-w-lg bg-white">
+
+            <!-- first box -->
+
+            <div>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1534158914592-062992fbe900?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=3784&q=80"
+                        alt="ping-pong bat on green surface" 
+                        class="rounded-md shadow-md mb-5">
+                </figure>
+            </div>
+
+            <!-- second box -->
+
+            <div class="px-4 mb-3 shadow-md">
+                <header>
+                    <p class="font-bold text-xl mb-3">Ping Pong Score Keeper</p>
+                </header>
+            </div>
+
+            <!-- third box -->
+
+            <div class="px-4 font-normal text-2xl">
+                <h1 class="font-semibold text-5xl mb-3"> <span id="p1Display">0</span> to <span id="p2Display">0</span></h1>
+                <p>Use the buttons below to keep score</p>
+                <div class="my-4 font-semibold">
+                    <label for="playto" id="playto">Playing To</label>
+                </div>
+            </div>
+
+            <!-- fourth box -->
+
+            <div class="m-0 p-0 flex items-center w-full">
+                <button type="button" id="p1Button" class="bg-green-400 w-1/3 hover:bg-green-500 text-white font-normal py-2 px-4 rounded"> +1 Player One</button>
+                <button type="button" id="p2Button" class="bg-blue-400 w-1/3 hover:bg-blue-500 text-white font-normal py-2 px-4 rounded"> +1 Player Two</button>
+                <button type="reset" id="reset" class="bg-red-400 w-1/3 hover:bg-red-500 text-white font-normal py-2 px-4 rounded">Reset</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
